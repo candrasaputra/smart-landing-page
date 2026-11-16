@@ -1,8 +1,9 @@
+# Easypanel-compatible: no container_name / host ports.
+# Easypanel's proxy reaches the container on port 13006 through its own network.
+# For local use: docker compose -f docker-compose.yml -f docker-compose.local.yml up -d --build
 services:
   smart-landing:
     build: .
-    image: smart-landing-page:latest
-    container_name: smart-landing-page
-    ports:
-      - "${PORT:-8080}:80"
     restart: unless-stopped
+    expose:
+      - "13006"

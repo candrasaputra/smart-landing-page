@@ -1,0 +1,4 @@
+services:
+  smart-landing:
+    ports:
+      - "${PORT:-8080}:13006"

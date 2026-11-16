@@ -10,18 +10,22 @@ Landing page statis (Bahasa Indonesia) untuk aplikasi **SMART**, alarm peringata
 | `/kebijakan-privasi` (juga `/privacy`, `/privacy-policy`) | `public/kebijakan-privasi.html` |
 | `/healthz` | health check (Nginx) |
 
-## Menjalankan dengan Docker
+## Deploy di Easypanel
+
+**Opsi A — App service (disarankan)**
+1. Buat service **App** → Source: GitHub/Git repo (atau upload).
+2. Build: pilih **Dockerfile** (path `Dockerfile`), bukan Nixpacks/Buildpacks.
+3. Tab **Domains** → tambahkan domain, set **Port = 13006**.
+4. Deploy.
+
+**Opsi B — Compose service**
+Gunakan `docker-compose.yml` apa adanya (tanpa `ports`/`container_name`), lalu di tab Domains
+pilih service `smart-landing` dan **Port = 13006**.
+
+## Menjalankan lokal
 
 ```bash
-docker compose up -d --build      # http://localhost:8080
-PORT=80 docker compose up -d --build
-```
-
-Tanpa compose:
-
-```bash
-docker build -t smart-landing-page .
-docker run -d -p 8080:80 --name smart-landing-page --restart unless-stopped smart-landing-page
+docker compose -f docker-compose.yml -f docker-compose.local.yml up -d --build   # http://localhost:8080
 ```
 
 ## Sebelum rilis
