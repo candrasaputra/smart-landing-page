@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kebijakan Privasi — SMART</title>
+  <meta name="description" content="Kebijakan Privasi aplikasi SMART, aplikasi alarm peringatan dini Gunung Merapi dari BPPTKG.">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="/" class="brand"><img src="/assets/img/logo.png" alt="Logo SMART"> SMART</a>
+      <nav class="nav-links" style="display:flex; position:static; flex-direction:row; padding:0; border:0; background:none;">
+        <a href="/" style="width:auto; padding:0;">← Kembali ke Beranda</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="legal">
+    <div class="container">
+      <h1>Kebijakan Privasi</h1>
+      <p class="updated">Terakhir diperbarui: 16 November 2026</p>
+
+      <p>
+        Kebijakan Privasi ini menjelaskan bagaimana aplikasi <strong>SMART</strong> ("Aplikasi"), yang
+        dikembangkan dan dikelola oleh Balai Penyelidikan dan Pengembangan Teknologi Kebencanaan Geologi
+        (<strong>BPPTKG</strong>), Badan Geologi, Kementerian Energi dan Sumber Daya Mineral Republik
+        Indonesia ("kami"), mengumpulkan, menggunakan, menyimpan, dan melindungi informasi Anda.
+      </p>
+      <p>
+        Dengan memasang dan menggunakan Aplikasi, Anda menyetujui praktik yang dijelaskan dalam
+        Kebijakan Privasi ini. Kebijakan ini disusun dengan memperhatikan Undang-Undang Nomor 27 Tahun 2022
+        tentang Pelindungan Data Pribadi.
+      </p>
+
+      <div class="toc">
+        <strong>Daftar Isi</strong>
+        <ol>
+          <li><a href="#data-dikumpulkan">Informasi yang Kami Kumpulkan</a></li>
+          <li><a href="#data-tidak-dikumpulkan">Informasi yang Tidak Kami Kumpulkan</a></li>
+          <li><a href="#izin">Izin Perangkat yang Digunakan</a></li>
+          <li><a href="#penggunaan">Bagaimana Kami Menggunakan Informasi</a></li>
+          <li><a href="#pihak-ketiga">Layanan Pihak Ketiga</a></li>
+          <li><a href="#penyimpanan">Penyimpanan dan Keamanan Data</a></li>
+          <li><a href="#retensi">Retensi dan Penghapusan Data</a></li>
+          <li><a href="#hak">Hak Anda</a></li>
+          <li><a href="#anak">Privasi Anak</a></li>
+          <li><a href="#batasan">Batasan Layanan Peringatan</a></li>
+          <li><a href="#perubahan">Perubahan Kebijakan Privasi</a></li>
+          <li><a href="#kontak">Hubungi Kami</a></li>
+        </ol>
+      </div>
+
+      <h2 id="data-dikumpulkan">1. Informasi yang Kami Kumpulkan</h2>
+
+      <h3>a. Informasi akun</h3>
+      <p>
+        Untuk menggunakan Aplikasi, Anda perlu mendaftar dan masuk menggunakan
+        <strong>nama pengguna</strong> dan <strong>kata sandi</strong>. Kata sandi dikirim ke server kami melalui
+        koneksi terenkripsi (HTTPS) dan tidak disimpan dalam bentuk teks biasa. Setelah masuk, Aplikasi
+        menyimpan token sesi di penyimpanan aman perangkat (Android Keystore / iOS Keychain) agar Anda
+        tidak perlu masuk berulang kali.
+      </p>
+
+      <h3>b. Token notifikasi</h3>
+      <p>
+        Aplikasi menggunakan Firebase Cloud Messaging (FCM) dari Google untuk menerima peringatan. FCM
+        membuat token pengenal perangkat dan mendaftarkan perangkat Anda ke topik peringatan
+        (misalnya Awan Panas Guguran, Lahar, dan Curah Hujan). Token ini dikelola oleh Google dan
+        <strong>tidak dikirim ke server kami</strong>.
+      </p>
+
+      <h3>c. Pengaturan lokal</h3>
+      <p>
+        Aplikasi menyimpan beberapa preferensi dan status teknis (misalnya status pengaturan izin alarm)
+        hanya di perangkat Anda. Data ini tidak dikirim ke server kami.
+      </p>
+
+      <h3>d. Data teknis server</h3>
+      <p>
+        Seperti layanan daring pada umumnya, server kami dapat mencatat informasi teknis saat Aplikasi
+        meminta data, seperti alamat IP, waktu permintaan, dan alamat endpoint yang diakses. Catatan ini
+        digunakan untuk keamanan, pemecahan masalah, dan menjaga ketersediaan layanan.
+      </p>
+
+      <h2 id="data-tidak-dikumpulkan">2. Informasi yang Tidak Kami Kumpulkan</h2>
+      <p>Aplikasi <strong>tidak</strong>:</p>
+      <ul>
+        <li>meminta izin atau mengumpulkan data <strong>lokasi</strong> Anda;</li>
+        <li>mengakses kontak, foto, kamera, mikrofon, atau file di perangkat Anda;</li>
+        <li>menampilkan iklan atau menggunakan SDK periklanan;</li>
+        <li>melacak aktivitas Anda di aplikasi atau situs web lain;</li>
+        <li>menjual, menyewakan, atau memperdagangkan data pribadi Anda kepada pihak mana pun.</li>
+      </ul>
+
+      <h2 id="izin">3. Izin Perangkat yang Digunakan</h2>
+      <p>Izin berikut diperlukan agar alarm peringatan dapat berbunyi dengan andal:</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Izin</th><th>Kegunaan</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Internet</td><td>Menerima peringatan dan memuat data pemantauan Gunung Merapi.</td></tr>
+            <tr><td>Notifikasi</td><td>Menampilkan peringatan dan informasi curah hujan.</td></tr>
+            <tr><td>Alarm &amp; pengingat tepat waktu</td><td>Membunyikan alarm segera saat peringatan diterima.</td></tr>
+            <tr><td>Notifikasi layar penuh</td><td>Menampilkan layar alarm saat ponsel terkunci.</td></tr>
+            <tr><td>Getar &amp; menjaga perangkat tetap aktif</td><td>Menggetarkan ponsel dan membangunkan layar saat alarm berbunyi.</td></tr>
+            <tr><td>Akses mode Jangan Ganggu</td><td>Memastikan alarm darurat tetap terdengar.</td></tr>
+            <tr><td>Layanan latar depan (pemutaran media)</td><td>Memutar suara alarm hingga Anda menghentikannya.</td></tr>
+            <tr><td>Abaikan optimasi baterai</td><td>Mencegah sistem menunda atau memblokir alarm.</td></tr>
+            <tr><td>Berjalan saat perangkat dinyalakan</td><td>Memulihkan pengaturan alarm setelah ponsel dinyalakan ulang.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Anda dapat mencabut izin tersebut kapan saja melalui pengaturan perangkat, namun hal ini dapat menyebabkan alarm tidak berbunyi.</p>
+
+      <h2 id="penggunaan">4. Bagaimana Kami Menggunakan Informasi</h2>
+      <p>Informasi yang dikumpulkan hanya digunakan untuk:</p>
+      <ul>
+        <li>mengirimkan alarm dan notifikasi peringatan dini aktivitas Gunung Merapi;</li>
+        <li>mengautentikasi akun dan menentukan hak akses (misalnya akses petugas untuk mengirim peringatan);</li>
+        <li>menampilkan data pemantauan seperti amplitudo seismik, kegempaan, curah hujan, dan status gunung;</li>
+        <li>menjaga keamanan, mencegah penyalahgunaan, dan memperbaiki gangguan layanan.</li>
+      </ul>
+
+      <h2 id="pihak-ketiga">5. Layanan Pihak Ketiga</h2>
+      <p>Aplikasi menggunakan layanan pihak ketiga berikut, yang memiliki kebijakan privasinya sendiri:</p>
+      <ul>
+        <li>
+          <strong>Firebase Cloud Messaging (Google LLC)</strong> — untuk pengiriman notifikasi.
+          Lihat <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privasi dan Keamanan Firebase</a>
+          serta <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Kebijakan Privasi Google</a>.
+        </li>
+      </ul>
+      <p>Kami tidak membagikan data pribadi Anda kepada pihak lain, kecuali jika diwajibkan oleh peraturan perundang-undangan atau permintaan resmi aparat penegak hukum.</p>
+
+      <h2 id="penyimpanan">6. Penyimpanan dan Keamanan Data</h2>
+      <ul>
+        <li>Seluruh komunikasi antara Aplikasi dan server kami menggunakan HTTPS.</li>
+        <li>Token sesi disimpan di penyimpanan terenkripsi milik sistem operasi perangkat.</li>
+        <li>Kata sandi disimpan di server dalam bentuk hash, bukan teks biasa.</li>
+        <li>Akses ke server dan basis data dibatasi hanya untuk personel yang berwenang.</li>
+      </ul>
+      <p>Meskipun kami menerapkan langkah pengamanan yang wajar, tidak ada metode transmisi atau penyimpanan elektronik yang sepenuhnya aman.</p>
+
+      <h2 id="retensi">7. Retensi dan Penghapusan Data</h2>
+      <p>
+        Data akun disimpan selama akun Anda aktif. Anda dapat keluar dari akun kapan saja melalui menu
+        Aplikasi, yang akan menghapus token sesi dari perangkat. Untuk menghapus akun beserta datanya
+        secara permanen, silakan hubungi kami melalui kontak di bawah. Permintaan akan diproses dalam
+        waktu paling lama 14 hari kerja. Menghapus Aplikasi dari perangkat akan menghapus seluruh data
+        yang tersimpan secara lokal.
+      </p>
+
+      <h2 id="hak">8. Hak Anda</h2>
+      <p>Sesuai peraturan pelindungan data pribadi yang berlaku, Anda berhak untuk:</p>
+      <ul>
+        <li>mendapatkan informasi tentang pemrosesan data pribadi Anda;</li>
+        <li>mengakses dan memperoleh salinan data pribadi Anda;</li>
+        <li>memperbarui atau memperbaiki data pribadi yang tidak akurat;</li>
+        <li>meminta penghapusan data pribadi Anda;</li>
+        <li>menarik persetujuan atas pemrosesan data pribadi Anda.</li>
+      </ul>
+
+      <h2 id="anak">9. Privasi Anak</h2>
+      <p>
+        Aplikasi ditujukan untuk masyarakat umum dan tidak secara khusus ditujukan bagi anak di bawah
+        usia 13 tahun. Kami tidak dengan sengaja mengumpulkan data pribadi anak. Jika Anda mengetahui
+        bahwa seorang anak telah memberikan data pribadi kepada kami, silakan hubungi kami agar data
+        tersebut dapat dihapus.
+      </p>
+
+      <h2 id="batasan">10. Batasan Layanan Peringatan</h2>
+      <p>
+        SMART adalah alat bantu peringatan dini. Pengiriman peringatan bergantung pada koneksi internet,
+        layanan pihak ketiga, dan pengaturan perangkat Anda, sehingga dapat tertunda atau tidak
+        terkirim. Selalu ikuti arahan resmi dari BPPTKG, BPBD, dan pihak berwenang setempat.
+      </p>
+
+      <h2 id="perubahan">11. Perubahan Kebijakan Privasi</h2>
+      <p>
+        Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu. Perubahan akan dipublikasikan
+        di halaman ini dengan tanggal pembaruan yang baru. Kami menyarankan Anda meninjau halaman ini
+        secara berkala.
+      </p>
+
+      <h2 id="kontak">12. Hubungi Kami</h2>
+      <p>Jika Anda memiliki pertanyaan, permintaan, atau keluhan terkait Kebijakan Privasi ini, silakan hubungi:</p>
+      <p>
+        <strong>Balai Penyelidikan dan Pengembangan Teknologi Kebencanaan Geologi (BPPTKG)</strong><br>
+        Jl. Cendana No. 15, Yogyakarta 55166<br>
+        Email: <a href="mailto:PRIVACY_EMAIL_HERE">PRIVACY_EMAIL_HERE</a>
+      </p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>© <span id="year">2026</span> BPPTKG — Badan Geologi, Kementerian ESDM.</div>
+      <nav class="footer-links">
+        <a href="/">Beranda</a>
+        <a href="/kebijakan-privasi">Kebijakan Privasi</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
